@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural Disaster Management System</title>
+    <link rel="stylesheet" href="front.css">
+    <script src="front.js" async></script>
+</head>
+<head></head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Disaster Information</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Real-Time Disaster Information</h1>
+    <div id="disaster-info">
+        <p>Loading disaster data...</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+<body>
+    <header>
+        <h1>Natural Disaster Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="#alerts">Disaster Alerts</a></li>
+                <li><a href="#safety-tips">Safety Tips</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#notifications">Notifications</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="alerts">
+            <h2>Current Disaster Alerts</h2>
+            <div id="alert-list"></div>
+        </section>
+
+        <section id="safety-tips">
+            <h2>Safety Tips</h2>
+            <ul>
+                <li>Stay informed via local news.</li>
+                <li>Create an emergency kit.</li>
+                <li>Follow evacuation routes.</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <p>Emergency hotline: <strong>911</strong></p>
+            <p>Local disaster relief: <strong>1-800-37587</strong></p>
+        </section>
+
+        <section id="notifications">
+            <h2>Notification System</h2>
+            <form id="notification-form">
+                <label for="notification-type">Notification Type:</label>
+                <select id="notification-type" name="notification-type">
+                    <option value="sms">SMS</option>
+                    <option value="email">Email</option>
+                    <option value="push">Push Notification</option>
+                </select>
+                <br>
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+                <br>
+                <label for="contact-info">Contact Information:</label>
+                <input type="text" id="contact-info" name="contact-info" required>
+                <br>
+                <button type="submit">Subscribe</button>
+            </form>
+            <div id="subscription-status"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 Natural Disaster Management System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
